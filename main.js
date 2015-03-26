@@ -1,1 +1,1 @@
-console.log('bananaFoo');
+console.log('JSGuild Rules');
