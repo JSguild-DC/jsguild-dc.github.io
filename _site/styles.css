@@ -1,0 +1,76 @@
+body {
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 22px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+}
+
+/* flexbox classes */
+/* flexbox defaults to a row organization */
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex-column {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: yellow;
+    padding: 200px 0 0;
+}
+
+.block {
+    padding: 60px;
+}
+
+.shadow {
+    -webkit-box-shadow: 2px 2px 2px 2px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    2px 2px 2px 2px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         2px 2px 2px 2px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.nav-btn {
+    margin: 15px;
+    text-align:center;
+    padding:20px 50px;
+    background: #ffff00;
+    transition: opacity 1s;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    -ms-transition: all ease 1s ;
+    transition: all ease 1s ;
+    border:2px solid #000000;
+}
+
+.nav-btn:hover {
+    background:#000000;
+    -webkit-transition: all ease 0.7s;
+    -moz-transition: all ease 0.7s;
+    -o-transition: all ease 0.7s;
+    -ms-transition: all ease 0.7s ;
+    transition: all ease 0.5s ;
+}
+
+.nav-btn:hover a {
+    color: #ffffff;
+    -webkit-transition: all ease 0.7s;
+    -moz-transition: all ease 0.7s;
+    -o-transition: all ease 0.7s;
+    -ms-transition: all ease 0.7s ;
+    transition: all ease 0.5s ;
+}
+
+.nav-btn_link {
+    color: #000000;
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    text-decoration: none;
+}
