@@ -79,3 +79,9 @@ header {
     position: fixed;
     top: 0px;
 }
+
+#map-canvas {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
