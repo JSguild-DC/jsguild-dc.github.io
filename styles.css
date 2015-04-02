@@ -74,3 +74,8 @@ header {
     font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
     text-decoration: none;
 }
+
+.sticky-nav {
+    position: fixed;
+    top: 0px;
+}
