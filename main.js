@@ -1,5 +1,6 @@
-console.log('JSGuild Rules');
+console.log('bananaFoo');
 
+// JavaScript for the sticky nav bar --
 
 // variable defines height of header and subtracts the height
 // of the main-nav id to get the height of where the toggleScroll
@@ -24,14 +25,25 @@ function toggleScroll() {
 };
 
 
+
+
+
+// Google Maps API initialization function
+
 function initialize() {
+    // creates an object that houses all of the google
+    // maps keys.
     var mapOptions = {
-        center: { lat: -34.397, lng: 150.644},
-        zoom: 8
-    };
+        center: { lat: 38.90423423481152, lng: -77.03126300000002},
+        zoom: 12
+        };
+
+    // creates a new google map out of the above specs
     var map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
 }
+
+// loads that map we created above when the window gets loaded
 google.maps.event.addDomListener(window, 'load', initialize);
 
 

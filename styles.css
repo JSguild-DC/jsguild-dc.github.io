@@ -81,7 +81,7 @@ header {
 }
 
 #map-canvas {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    height: 500px;
+    width: 500px;
+    margin: 0 25%;
 }
