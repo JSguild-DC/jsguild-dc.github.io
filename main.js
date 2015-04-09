@@ -18,9 +18,11 @@ function toggleScroll() {
     // the class 'main-nav'
     if(window.pageYOffset < headerHeight) {
         document.getElementById('js-main-nav').className = 'main-nav';
+        document.getElementById('js-sticky-nav-filler').style.marginTop = 'inherit';
     // else give js-main-nav the 'triggered' class
     } else {
         document.getElementById('js-main-nav').className = 'sticky-nav';
+        document.getElementById('js-sticky-nav-filler').style.marginTop = headerHeight + "px";
     }
 };
 
