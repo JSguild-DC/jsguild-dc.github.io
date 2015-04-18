@@ -78,6 +78,9 @@ header {
 .sticky-nav {
     position: fixed;
     top: 0px;
+    background: yellow;
+    opacity: 0.5;
+    width: 100%;
 }
 
 #map-canvas {
