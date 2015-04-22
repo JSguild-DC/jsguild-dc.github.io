@@ -1,6 +1,1 @@
-Hola, this is Victor
-This is Rebecca
-hello hello hello this is kaitlynn
-bananaFoo was here...
-Seth here!
-Phil was here again.
+Welcome to the JSGuild DC homepage project. We are the best coding-related guild in Washington, DC.
