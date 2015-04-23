@@ -48,4 +48,26 @@ function initialize() {
 // loads that map we created above when the window gets loaded
 google.maps.event.addDomListener(window, 'load', initialize);
 
+// Function to send visitors to correct content based on initial button clicks
+function whoAreYou() {
+    
+    console.log('listening');
+    var member = document.getElementById('member');
+
+    member.onclick = function go(){
+        var info = document.getElementById('info');
+        var form = document.getElementById('form');
+
+        //function to hide all other person classes and show class "this" (stringified) in the info and form divs
+        console.log(member);
+        console.log(this);
+        debugger
+
+    }
+}whoAreYou();
+
+ // function go(person) {
+ //    console.log('hey');
+ //        console.log(person+' clicked');
+ //    };
 
