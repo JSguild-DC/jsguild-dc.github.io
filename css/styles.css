@@ -6,6 +6,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 900;
+    padding-left: 15px;
 }
 
 /* flexbox classes */
@@ -24,11 +25,11 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     background-color: yellow;
-    padding: 200px 0 0;
+    padding: 100px 0 0;
 }
 
 .block {
-    padding: 60px;
+    padding: 15px;
 }
 
 .shadow {
@@ -79,12 +80,20 @@ header {
     position: fixed;
     top: 0px;
     background: yellow;
-    opacity: 0.5;
+   /* opacity: 0.5; the opacity makes it hard to read in my opinion (jb)*/
     width: 100%;
+     -webkit-box-shadow: 2px 2px 2px 2px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    2px 2px 2px 2px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         2px 2px 2px 2px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  /*  not sure why the shaddow is not applying after the sticky nav is in effect...*/
 }
 
 #map-canvas {
     height: 500px;
     width: 500px;
     margin: 0 25%;
+}
+
+#whoAreYou { /*hiding the who are you blok until we have the functionality done*/
+    display: none;
 }
