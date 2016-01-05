@@ -9,12 +9,22 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 15px;
 }
 
+.stage-center {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
 /* flexbox classes */
 /* flexbox defaults to a row organization */
 
 .flex-container {
     display: -webkit-flex;
     display: flex;
+}
+
+.nav-list.flex-container {
+    max-width: 100%;
+    padding: 0;
 }
 
 .flex-column {
@@ -70,6 +80,18 @@ header {
     transition: all ease 0.5s ;
 }
 
+.nav-wrapper {
+    display: inline-block;
+    float: left;
+}
+
+.logo {
+    width: 16%;
+    display: inline-block;
+    float: left;
+    margin-bottom: 2em;
+}
+
 .nav-btn_link {
     color: #000000;
     font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
@@ -81,7 +103,7 @@ header {
     top: 0px;
     background: yellow;
    /* opacity: 0.5; the opacity makes it hard to read in my opinion (jb)*/
-    width: 100%;
+  width: 80%;
      -webkit-box-shadow: 2px 2px 2px 2px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow:    2px 2px 2px 2px #ccc;  /* Firefox 3.5 - 3.6 */
     box-shadow:         2px 2px 2px 2px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
@@ -96,4 +118,9 @@ header {
 
 #whoAreYou { /*hiding the who are you blok until we have the functionality done*/
     display: none;
+}
+
+.clearfix {
+    clear: both;
+    overflow: hidden;
 }
