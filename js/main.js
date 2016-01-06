@@ -26,6 +26,32 @@ function toggleScroll() {
     }
 };
 
+/// adding resources to resource list functionality 
+$('.add-resource').submit(function(e){
+      e.preventDefault();
+      var link = $('.link').val();
+      var title = $('.title').val();
+      var category = $('select').val().toLowerCase();
+        var newResource = '<li class="resources-list-item"><a href="' + link + '">' + title + '</a></li>';
+
+      
+      if(category === 'beginner'){
+        $('.beginner').append(newResource);
+      } 
+      else if (category === 'level-up'){
+        $('.level-up').append(newResource);
+      } 
+      else if (category === 'tutorials'){
+        $('.tutorials').append(newResource);
+      } 
+      else {
+        $('.frameworks').append(newResource);
+      }
+      
+      $('.resources-list').append(newResource);
+      $('.add-resource')[0].reset();// getElementById('.add-resource').reset();
+});
+
 
 
 

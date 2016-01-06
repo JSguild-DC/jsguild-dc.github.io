@@ -10,6 +10,9 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApRe0oeXXnAXPpqQM0p4JLdBTMDoeBhFE">
     </script>
 
+    <!--JQuery #bruh-->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
     <!--Google Fonts #bruh-->
     <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic|Source+Sans+Pro:900' rel='stylesheet' type='text/css'>
 
@@ -67,10 +70,12 @@
   <section class="block block-2">
     <h1 class="block-header">Beginner</h1>
     <p class="block-text">Start Here Everyone!</p>
-    <ul class="sub-list">
+    <ul class="sub-list beginner">
       <li><a class="sub-list_link" href="http://www.amazon.com/JavaScript-Definitive-Guide-Activate-Guides/dp/0596805527/ref=dp_ob_title_bk">JavaScript The Definitive Guide</a></li>
       <li><a class="sub-list_link" href="http://www.amazon.com/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647">JavaScript and JQuery</a> </li>
-      <li><a class="sub-list_link" href="http://eloquentjavascript.net/">Eloquent JavaScript</a> </li>
+      <li><a class="sub-list_link" href="http://javascriptissexy.com/how-to-learn-javascript-properly/">JavaScript is Sexy</a> </li>
+      <li><a class="sub-list_link" href="http://jsforcats.com/">JavaScript for Cats</a> </li>
+      <li><a class="sub-list_link" href="https://developer.mozilla.org/en-US/Learn/JavaScript">MDN Learn JavaScript</a> </li>
     </ul>
   </section>
 
@@ -78,7 +83,8 @@
   <section class="block block-3">
     <h1 class="block-header">Level Up</h1>
     <p class="block-text">Take your skillz to the next level</p>
-    <ul class="sub-list">
+    <ul class="sub-list level-up">
+      <li><a class="sub-list_link" href="http://eloquentjavascript.net/">Eloquent JavaScript</a> </li>
       <li><a class="sub-list_link" href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/">Learning JavaScript Patterns</a></li>
     </ul>
   </section>
@@ -87,7 +93,7 @@
    <section class="block block-4">
     <h1 class="block-header">Tutorials</h1>
     <p class="block-text">Walk through guides</p>
-    <ul class="sub-list">
+    <ul class="sub-list tutorials">
       <li><a class="sub-list_link" href="https://www.codeschool.com/paths/javascript">CodeSchool JavaScript</a></li>
       <li><a class="sub-list_link" href="https://www.codecademy.com/learn/javascript">CodeAcademyJavaScript</a></li>
       <li><a class="sub-list_link" href="ttps://github.com/sethvincent/javascripting">JavaScript basics on the command line</a></li>
@@ -97,9 +103,35 @@
      <section class="block block-5">
     <h1 class="block-header">Frameworks</h1>
     <p class="block-text">Impress your peers with buzzwords!</p>
-    <ul class="sub-list">
+    <ul class="sub-list frameworks">
       <li><a class="sub-list_link" href="https://thinkster.io/a-better-way-to-learn-angularjs/">Angular</a></li></li>
     </ul>
+  </section>
+
+  <section>
+    <form class="add-resource">
+    <div>
+      <label for='title'>Title</label>
+      <input type='text' class='title'>
+    </div>
+    
+    <div>
+      <label for='link'>Link</label>
+      <input type='text' class='link'>
+    </div> 
+    
+    <div>
+      <label for='select'>For Which Category?</label>
+      <select>
+        <option>Beginner</option>
+        <option>Level-Up</option>
+        <option>Tutorials</option>
+        <option>Frameworks</option>
+      </select>
+    </div>
+    
+    <input type='submit' class='submit'>
+  <form>
   </section>
 </div>
 
